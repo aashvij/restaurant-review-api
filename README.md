@@ -17,6 +17,11 @@ This is a RESTful API built with FastAPI for managing restaurants and user revie
 *   **Data Validation:** Utilizes Pydantic for request and response data validation.
 *   **FastAPI Framework:** Built using FastAPI for high performance and automatic API documentation (Swagger UI).
 
+## Tech Stack
+- **Framework:** FastAPI
+- **Validation:** Pydantic
+- **Language:** Python 3.x
+
 ## Endpoints
 
 *   **/restaurants/**
@@ -59,16 +64,9 @@ This is a RESTful API built with FastAPI for managing restaurants and user revie
 
 ## Usage Example (Create a Restaurant)
 curl -X POST \
--H "Content-Type: application/json" \
--d '{
-"restaurant_name": "Delicious Bistro",
-"cuisine": "Italian",
-"address": "123 Main St",
-"city": "Anytown",
-"country": "USA",
-"zip_code": "12345"
-}' \
-http://127.0.0.1:8000/restaurants/
+  -H "Content-Type: application/json" \
+  -d '{"restaurant_name": "Delicious Bistro", "cuisine": "Italian", "address": "123 Main St", "city": "Anytown", "country": "USA", "zip_code": "12345"}' \
+  http://127.0.0.1:8000/restaurants/
 
 
 ## Future Enhancements
