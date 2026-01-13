@@ -63,10 +63,12 @@ This is a RESTful API built with FastAPI for managing restaurants and user revie
     Access the API documentation at `http://127.0.0.1:8000/docs`.
 
 ## Usage Example (Create a Restaurant)
+```bash
 curl -X POST \
   -H "Content-Type: application/json" \
   -d '{"restaurant_name": "Delicious Bistro", "cuisine": "Italian", "address": "123 Main St", "city": "Anytown", "country": "USA", "zip_code": "12345"}' \
   http://127.0.0.1:8000/restaurants/
+```
 
 
 ## Future Enhancements
